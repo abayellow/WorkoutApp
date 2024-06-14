@@ -32,20 +32,20 @@ final class TabBarController: UITabBarController {
         let progressNavigation = NavBarController(rootViewController: progressController)
         let settingsNavigation = NavBarController(rootViewController: settingsController)
         
-        overviewController.tabBarItem = UITabBarItem(title: Resources.Strings.tabBar.overview,
-                                                     image: Resources.Images.tabBar.overview,
+        overviewController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.overview,
+                                                     image: Resources.Images.TabBar.overview,
                                                      tag: Tabs.overview.rawValue)
         
-        sessionController.tabBarItem = UITabBarItem(title: Resources.Strings.tabBar.session,
-                                                     image: Resources.Images.tabBar.session,
+        sessionController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.session,
+                                                     image: Resources.Images.TabBar.session,
                                                      tag: Tabs.overview.rawValue)
         
-        progressController.tabBarItem = UITabBarItem(title: Resources.Strings.tabBar.progress,
-                                                     image: Resources.Images.tabBar.progress,
+        progressController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.progress,
+                                                     image: Resources.Images.TabBar.progress,
                                                      tag: Tabs.overview.rawValue)
         
-        settingsController.tabBarItem = UITabBarItem(title: Resources.Strings.tabBar.setting,
-                                                     image: Resources.Images.tabBar.setting,
+        settingsController.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.setting,
+                                                     image: Resources.Images.TabBar.setting,
                                                      tag: Tabs.overview.rawValue)
         
         setViewControllers([
