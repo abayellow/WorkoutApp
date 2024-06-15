@@ -24,6 +24,7 @@ enum Resources {
         enum NavBar {
             static let session = "High Intensity Cardio"
             static let progress = "Workout Progress"
+            static let overview = "Today"
         }
         
         enum Overview {
@@ -55,6 +56,7 @@ enum Resources {
         
         enum Common {
             static let downArrow = UIImage(named: "down_arrow")
+            static let addButton = UIImage(named: "add_button")
         }
         
     }
