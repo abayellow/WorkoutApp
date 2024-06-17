@@ -17,7 +17,7 @@ final class OverviewNavBar: BaseView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        addBottomBorder(with: Resources.Colors.separator, height: 1)
+        addBottomBorder(with: R.Colors.separator, height: 1)
     }
     
     func addAllWorkoutsAction(_ action: Selector, eith target: Any?) {
@@ -33,17 +33,17 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-         super.addViews()
+    override func setupViews() {
+         super.setupViews()
         
-        addView(titleLabel)
-        addView(allWorkoutsButton)
-        addView(addButton)
-        addView(weekView)
+        setupView(titleLabel)
+        setupView(allWorkoutsButton)
+        setupView(addButton)
+        setupView(weekView)
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constantViews() {
+        super.constantViews()
         
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -70,24 +70,24 @@ extension OverviewNavBar {
    
     }
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureApperiance() {
+        super.configureApperiance()
         backgroundColor = .white
 //        addBottomBorder(with: Resources.Colors.separator, height: 1)
         
 //        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = Resources.Strings.NavBar.overview
-        titleLabel.textColor = Resources.Colors.titleGray
-        titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
+        titleLabel.text = R.Strings.NavBar.overview
+        titleLabel.textColor = R.Colors.titleGray
+        titleLabel.font = R.Fonts.helveticaRegular(with: 22)
         
 //        allWorkoutsButton.translatesAutoresizingMaskIntoConstraints = false
-        allWorkoutsButton.setTitel(Resources.Strings.Overview.allWorkoutButton)
+        allWorkoutsButton.setTitel(R.Strings.Overview.allWorkoutButton)
 //        allWorkoutsButton.addTarget(self,
 //                                    action: #selector(allWorkoutsButtonAction),
 //                                    for: .touchUpInside)
         
 //        addButton.translatesAutoresizingMaskIntoConstraints = false
-        addButton.setImage(Resources.Images.Common.addButton, for: .normal)
+        addButton.setImage(R.Images.Common.addButton, for: .normal)
 //        addButton.addTarget(self,
 //                            action: #selector(addButtonAction),
 //                            for: .touchUpInside)

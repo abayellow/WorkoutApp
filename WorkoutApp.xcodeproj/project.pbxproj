@@ -14,7 +14,7 @@
 		6D5B61612C1AA85900F2D12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B615F2C1AA85900F2D12D /* LaunchScreen.storyboard */; };
 		6D5B616B2C1AABA100F2D12D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B616A2C1AABA100F2D12D /* TabBarController.swift */; };
 		6D5B616E2C1AADD000F2D12D /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B616D2C1AADD000F2D12D /* UIColor + Extension.swift */; };
-		6D5B61712C1AB14100F2D12D /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B61702C1AB14100F2D12D /* Resources.swift */; };
+		6D5B61712C1AB14100F2D12D /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B61702C1AB14100F2D12D /* R.swift */; };
 		6D5B61732C1ACD1400F2D12D /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B61722C1ACD1400F2D12D /* NavBarController.swift */; };
 		6D5B61762C1ACEE700F2D12D /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B61752C1ACEE700F2D12D /* BaseController.swift */; };
 		6D5B61782C1AD13300F2D12D /* UIView + Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B61772C1AD13300F2D12D /* UIView + Extension .swift */; };
@@ -27,6 +27,7 @@
 		6D9D4CDC2C1EAC3A00269994 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D4CDB2C1EAC3A00269994 /* WeekView.swift */; };
 		6D9D4CDE2C1EADD500269994 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D4CDD2C1EADD500269994 /* WeekdayView.swift */; };
 		6D9D4CE02C1EB2A100269994 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D4CDF2C1EB2A100269994 /* Date + Extensions.swift */; };
+		6D9D4D252C1FF99E00269994 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D4D242C1FF99E00269994 /* BaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,7 @@
 		6D5B61622C1AA85900F2D12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D5B616A2C1AABA100F2D12D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		6D5B616D2C1AADD000F2D12D /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
-		6D5B61702C1AB14100F2D12D /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		6D5B61702C1AB14100F2D12D /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		6D5B61722C1ACD1400F2D12D /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		6D5B61752C1ACEE700F2D12D /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		6D5B61772C1AD13300F2D12D /* UIView + Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension .swift"; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		6D9D4CDB2C1EAC3A00269994 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		6D9D4CDD2C1EADD500269994 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		6D9D4CDF2C1EB2A100269994 /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		6D9D4D242C1FF99E00269994 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				6D5B616F2C1AAE2C00F2D12D /* Extensions */,
-				6D5B61702C1AB14100F2D12D /* Resources.swift */,
+				6D5B61702C1AB14100F2D12D /* R.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -133,10 +135,11 @@
 		6D5B61742C1ACED200F2D12D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6D7EBBBD2C1C2C4400D52CB0 /* Settings */,
-				6D5B617C2C1AD27900F2D12D /* Progress */,
-				6D5B617B2C1AD27400F2D12D /* Session */,
+				6D9D4D262C1FF9F400269994 /* Navigation */,
 				6D5B617A2C1AD26C00F2D12D /* Overview */,
+				6D5B617B2C1AD27400F2D12D /* Session */,
+				6D5B617C2C1AD27900F2D12D /* Progress */,
+				6D7EBBBD2C1C2C4400D52CB0 /* Settings */,
 				6D5B61792C1AD25D00F2D12D /* Base */,
 			);
 			path = Controllers;
@@ -145,9 +148,7 @@
 		6D5B61792C1AD25D00F2D12D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				6D9D4C912C1D8CBE00269994 /* BaseView */,
-				6D5B616A2C1AABA100F2D12D /* TabBarController.swift */,
-				6D5B61722C1ACD1400F2D12D /* NavBarController.swift */,
+				6D9D4C912C1D8CBE00269994 /* Views */,
 				6D5B61752C1ACEE700F2D12D /* BaseController.swift */,
 			);
 			path = Base;
@@ -196,12 +197,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		6D9D4C912C1D8CBE00269994 /* BaseView */ = {
+		6D9D4C912C1D8CBE00269994 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				6D9D4C922C1D8CD300269994 /* BaseView.swift */,
+				6D9D4D242C1FF99E00269994 /* BaseInfoView.swift */,
 			);
-			path = BaseView;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6D9D4CDA2C1EAC1B00269994 /* WeekView */ = {
@@ -211,6 +213,15 @@
 				6D9D4CDD2C1EADD500269994 /* WeekdayView.swift */,
 			);
 			path = WeekView;
+			sourceTree = "<group>";
+		};
+		6D9D4D262C1FF9F400269994 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6D5B616A2C1AABA100F2D12D /* TabBarController.swift */,
+				6D5B61722C1ACD1400F2D12D /* NavBarController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,10 +303,11 @@
 				6D5B61782C1AD13300F2D12D /* UIView + Extension .swift in Sources */,
 				6D5B616B2C1AABA100F2D12D /* TabBarController.swift in Sources */,
 				6D5B617F2C1AD29B00F2D12D /* SessionController.swift in Sources */,
+				6D9D4D252C1FF99E00269994 /* BaseInfoView.swift in Sources */,
 				6D7EBBC22C1C2EA500D52CB0 /* SecondaryButton.swift in Sources */,
 				6D5B61812C1AD2C900F2D12D /* ProgressController.swift in Sources */,
 				6D5B61732C1ACD1400F2D12D /* NavBarController.swift in Sources */,
-				6D5B61712C1AB14100F2D12D /* Resources.swift in Sources */,
+				6D5B61712C1AB14100F2D12D /* R.swift in Sources */,
 				6D5B61552C1AA85600F2D12D /* AppDelegate.swift in Sources */,
 				6D9D4C932C1D8CD300269994 /* BaseView.swift in Sources */,
 				6D9D4CDE2C1EADD500269994 /* WeekdayView.swift in Sources */,
